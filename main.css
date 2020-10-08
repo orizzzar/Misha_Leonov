@@ -2,6 +2,9 @@ body {
     padding: 0;
     margin: 0;
     background-image: linear-gradient(to left, violet, indigo, red, green, yellow, orange, blue);
+    background-image: url("misha.jpg");
+    background-size: 300px 300px;
+      
 }
 
 a {
@@ -27,6 +30,12 @@ aside {
 
     background-image: linear-gradient(to left, brown, green);
     height: 90vh;
+}
+
+.misha {
+    left: unset;
+    right: 0;
+    
 }
 
 nav {
@@ -59,13 +68,23 @@ nav a:hover {
 }
 
 section {
-    margin: 0px 0px 0px 135px;
+    margin: 0px 135px 0px 135px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5vw 100px;
     font-weight: 500;
     font-family: "Comic Sans MS";
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(255,0,0,0.5);
+    color: white;
 
 }
+section *:hover {
+    transform: scale(1.2);
+}
+section *{
+    transition: all ease 100ms;
+}
+
 
