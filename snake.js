@@ -4,12 +4,12 @@ ctx = canvas.getContext('2d'),
 scoreIs = document.getElementById('score'),
 direction = '',
 directionQueue = '',
-fps = 70,
+fps = 20,
 snake = [],
-snakeLength = 5,
-cellSize = 20,
-snakeColor = '#3498db',
-foodColor = '#ff3636',
+snakeLength = 15,
+cellSize = 12,
+snakeColor = '#0e5522',
+foodColor = '#e50322',
 foodX = [],
 foodY = [],
 food = {
@@ -17,8 +17,8 @@ food = {
 	y: 0
 },
 score = 0,
-hit = new Audio('hit.wav');
-pick = new Audio('pick.wav');
+hit = new Audio('hit.mp3');
+pick = new Audio('pick.mp3');
 // pushes possible x and y positions to seperate arrays
 for(i = 0; i <= canvas.width - cellSize; i+=cellSize) {
 	foodX.push(i);
@@ -147,7 +147,7 @@ function game(){
 			drawSnake();
 			createFood();
 			drawFood();
-			directionQueue = 'right';
+			directionQueue = 'down';
 			score = 0;
 		}
 	}
@@ -173,8 +173,8 @@ function game(){
    moveSnake();
 }
 function newGame() {
-	direction = 'right'; // initial direction
-	directionQueue = 'right';
+	direction = 'down'; // initial direction
+	directionQueue = 'down';
 	ctx.beginPath();
 	createSnake();
 	createFood();
