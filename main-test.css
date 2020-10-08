@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to left, violet, indigo, red, green, yellow, orange, blue);
+    background-image: url("misha.jpg");
+    background-size: 200px 300px;
+}
+
+h1 a {
+    font-size: 100px;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+img.main_photo {
+    width: 80%;
+    display: block;
+    border-radius: 50% 50% 25% 25%;
+}
+
+
+
+
+
+.sidebar {
+    width: 180px;
+    position: fixed;
+    top: 30px;
+    height: 700px;
+
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+}
+.sidebar-left {
+    left: 30px;
+}
+.sidebar-right {
+    right: 30px;
+}
+
+
+
+
+.nav_menu {
+    margin-top: 30px;
+}
+.nav_menu a {
+    display: block;
+    padding: 8px 0;
+    background-color: rgba(14, 115, 14, 0.6);
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.nav_menu a span {
+    display: block;
+    transition: all ease 800ms;
+}
+.nav_menu a:hover span {
+    transform: rotateY(360deg);
+    display: block;
+}
+.nav_menu a:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.8);;
+    ;
+}
+
+
+section {
+    margin: 0px 220px 0px 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw 100px;
+    font-weight: 500;
+    font-family: monospace;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(255,0,0,0.5);
+    color: white;
+    text-align: justify;
+
+    background-color: rgba(255, 225, 0, 0.1);
+    filter: blur(1px);
+    backdrop-filter: blur(4px);
+}
+section *:hover {
+    transform: scale(1.05);
+}
+section *{
+    transition: all ease 100ms;
+}
+
+footer {
+    font-size: 30px;
+    color: aqua;
+    text-align: center;
+    background-color: blue;
+    padding: 0 220px;
+}
+
+.score {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: springgreen;
+    font-size: 33px;
+    font-family: monospace;
+    text-shadow: 2px 2px 16px rgba(61, 138, 61, 1);
+}
