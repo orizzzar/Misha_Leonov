@@ -90,4 +90,9 @@ section *{
     transition: all ease 100ms;
 }
 
-
+footer {
+    font-size: 30px;
+    color: aqua;
+    text-align: center;
+    background-color: blue;
+}
