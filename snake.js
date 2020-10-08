@@ -22,7 +22,10 @@ pick = new Audio('pick.wav');
 // pushes possible x and y positions to seperate arrays
 for(i = 0; i <= canvas.width - cellSize; i+=cellSize) {
 	foodX.push(i);
-	foodY.push(i);
+    
+    for(j = 0; j <= canvas.height - cellSize; j+=cellSize) {
+        foodY.push(j);
+    }
 }
 // makes canvas interactive upon load
 canvas.setAttribute('tabindex',1);
@@ -53,7 +56,7 @@ function setBackground(color1, color2) {
 	ctx.fillStyle = color1;
 	ctx.strokeStyle = color2;
 
-	ctx.fillRect(0, 0, canvas.height, canvas.width);
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 	for(var x = 0.5; x < canvas.width; x += cellSize) {
 		ctx.moveTo(x, 0);
@@ -124,19 +127,17 @@ function checkCollision(x1,y1,x2,y2) {
 }
 // main game loop
 function game(){
-	var head = snake[0];
+	
     // checking for wall collisions
     
-	if(head.x < 0 || head.x > canvas.width - cellSize  || head.y < 0 || head.y > canvas.height - cellSize) {
-		hit.play();
-		setBackground();
-		createSnake();
-		drawSnake();
-		createFood();
-		drawFood();
-		directionQueue = 'right';
-		score = 0;
-	}
+    if (snake[0].x < 0) snake[0].x = canvas.width - cellSize;
+    if (snake[0].x > canvas.width - cellSize) snake[0].x = 0;
+
+    if (snake[0].y < 0) snake[0].y = canvas.height - cellSize;
+    if (snake[0].y > canvas.height - cellSize) snake[0].y = 0;
+
+    var head = snake[0];
+
 	// checking for colisions with snake's body
 	for(i = 1; i < snake.length; i++) {
 		if(head.x == snake[i].x && head.y == snake[i].y) {
