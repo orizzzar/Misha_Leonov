@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to left, violet, indigo, red, green, yellow, orange, blue);
+}
+
+a {
+    font-size: 100px;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+img {
+    width: 50%;
+    display: block;
+    border-radius: 50% 50% 25% 25%;
+}
+
+aside {
+    width: 120px;
+    position: fixed;
+    left: 15px;
+    top: 5vh;
+    bottom: 5vh;
+
+    background-image: linear-gradient(to left, brown, green);
+    height: 90vh;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    display: block;
+    padding: 8px 0;
+    background-color: rgba(14, 115, 14, 0.6);
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+nav a span {
+    display: block;
+    transition: all ease 800ms;
+}
+
+nav a:hover span {
+    transform: rotateY(360deg);
+    display: block;
+}
+
+nav a:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.8);;
+    ;
+}
+
+section {
+    margin: 0px 0px 0px 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw 100px;
+    font-weight: 500;
+    font-family: "Comic Sans MS";
+
+}
+
