@@ -53,19 +53,20 @@ img.main_photo {
     color: white;
     font-size: 16px;
     margin-bottom: 5px;
+
+    text-decoration: none;
+    text-align: center;
 }
 .nav_menu a span {
     display: block;
-    transition: all ease 800ms;
+    transition: all ease 500ms;
 }
 .nav_menu a:hover span {
     transform: rotateY(360deg);
     display: block;
 }
 .nav_menu a:hover {
-    color: red;
-    background-color: rgba(255, 255, 255, 0.8);;
-    ;
+    color: black;
 }
 
 
