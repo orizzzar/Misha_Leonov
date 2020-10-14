@@ -1,0 +1,98 @@
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+#ula {
+  width: 200px;
+  height: 250px;
+  border-radius: 38% 38% 59% 59%;
+  background-color: rgb(230, 174, 55);
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+}
+
+#hair {
+  background-color: rgb(68, 43, 5);
+  width: 100%;
+  height: 50px;
+}
+
+#eyes {
+  width: 100%;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#left_eye,
+#right_eye {
+  background-color: white;
+  width: 35px;
+  height: 15px;
+  border-radius: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#left_eyeball,
+#right_eyeball {
+  width: 15px;
+  height: 90%;
+
+  background-color: rgb(34, 92, 110);
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#left_eyeball_inside,
+#right_eyeball_inside {
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#brows {
+  width: 100%;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 25px;
+  margin-bottom: 2px;
+}
+
+#left_brow,
+#right_brow {
+  height: 100%;
+  width: 45px;
+  background-color: black;
+  border-radius: 40% 40% 25% 25%;
+}
+
+#month {
+  width: 70px;
+  height: 20px;
+  background-color: pink;
+  margin: 75px auto;
+  border-radius: 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#month_inside {
+  border-radius: 40%;
+  background-color: white;
+  width: 50px;
+  height: 8px;
+}
